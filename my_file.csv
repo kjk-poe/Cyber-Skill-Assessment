@@ -1,0 +1,156 @@
+{
+  "domain_name": "gupdate.us",
+  "domain__id": "D4779511D35C1418B81821D8AAFE91C42-GDREG",
+  "whois_server": "https://porkbun.com/whois",
+  "registrar": "Porkbun",
+  "registrar_id": "1861",
+  "registrar_url": "www.porkbun.com",
+  "registrar_email": "abuse@porkbun.com",
+  "registrar_phone": "+1.5038508351",
+  "status": [
+    "pendingDelete https://icann.org/epp#pendingDelete",
+    "redemptionPeriod https://icann.org/epp#redemptionPeriod"
+  ],
+  "registrant_id": "C9303DA1FF4DF4FD5864ACD2A0C19E01A-GDREG",
+  "registrant_name": "Petru Albescu",
+  "registrant_organization": null,
+  "registrant_street": "STR. LAZAR GHEORGHE nr. 34 ap. 52, TIMIS,",
+  "registrant_city": "Timisoara",
+  "registrant_state_province": "Timis",
+  "registrant_postal_code": "3003102",
+  "registrant_country": "RO",
+  "registrant_phone": "+40.742131392",
+  "registrant_email": "thund3rz.dns@gmail.com",
+  "registrant_fax": null,
+  "registrant_application_purpose": "P3",
+  "registrant_nexus_category": "C11",
+  "admin_id": "C6E54A961585947F6A4C24E7788DC1353-GDREG",
+  "admin": "Petru Albescu",
+  "admin_organization": null,
+  "admin_street": "STR. LAZAR GHEORGHE nr. 34 ap. 52, TIMIS,",
+  "admin_city": "Timisoara",
+  "admin_state_province": "Timis",
+  "admin_postal_code": "3003102",
+  "admin_country": "RO",
+  "admin_phone": "+40.742131392",
+  "admin_email": "thund3rz@protonmail.com",
+  "admin_fax": null,
+  "admin_application_purpose": "P3",
+  "admin_nexus_category": "C11",
+  "tech_id": "C548721A778C148E9A682B2075C1DBF43-GDREG",
+  "tech_name": "Petru Albescu",
+  "tech_organization": null,
+  "tech_street": "STR. LAZAR GHEORGHE nr. 34 ap. 52, TIMIS,",
+  "tech_city": "Timisoara",
+  "tech_state_province": "Timis",
+  "tech_postal_code": "3003102",
+  "tech_country": "RO",
+  "tech_phone": "+40.742131392",
+  "tech_email": "thund3rz@protonmail.com",
+  "tech_fax": null,
+  "tech_application_purpose": "P3",
+  "tech_nexus_category": "C11",
+  "name_servers": null,
+  "creation_date": "2022-03-13 14:12:11",
+  "expiration_date": "2023-03-13 14:12:11",
+  "updated_date": "2023-04-23 12:02:37"
+}{
+  "domain_name": [
+    "msupdate.top",
+    "MSUPDATE.TOP"
+  ],
+  "registrar": "Porkbun LLC",
+  "whois_server": "whois.porkbun.com",
+  "referral_url": null,
+  "updated_date": [
+    "2022-09-16 23:31:13",
+    "2022-05-21 08:50:33"
+  ],
+  "creation_date": "2022-05-21 08:50:32",
+  "expiration_date": "2023-05-21 08:50:32",
+  "name_servers": [
+    "ns1.msupdate.top",
+    "ns2.msupdate.top"
+  ],
+  "status": [
+    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+    "clientHold https://icann.org/epp#clientHold",
+    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+    "clientDeleteProhibited http://icann.org/epp#clientDeleteProhibited",
+    "clientTransferProhibited http://icann.org/epp#clientTransferProhibited"
+  ],
+  "emails": "abuse@porkbun.com",
+  "dnssec": "unsigned",
+  "name": [
+    "REDACTED FOR PRIVACY",
+    "Whois Privacy"
+  ],
+  "org": "Private by Design, LLC",
+  "address": [
+    "REDACTED FOR PRIVACY",
+    "500 Westover Dr #9816"
+  ],
+  "city": [
+    "REDACTED FOR PRIVACY",
+    "Sanford"
+  ],
+  "state": "NC",
+  "registrant_postal_code": [
+    "REDACTED FOR PRIVACY",
+    "27330"
+  ],
+  "country": "US"
+}{
+  "domain_name": "mssync.one",
+  "registrar": "Porkbun",
+  "whois_server": "https://porkbun.com/whois",
+  "referral_url": null,
+  "updated_date": "2022-09-16 23:31:14",
+  "creation_date": "2022-06-29 11:41:39",
+  "expiration_date": "2023-06-29 11:41:39",
+  "name_servers": [
+    "ns1.mssync.one",
+    "ns2.mssync.one"
+  ],
+  "status": [
+    "clientHold https://icann.org/epp#clientHold",
+    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited"
+  ],
+  "emails": "abuse@porkbun.com",
+  "dnssec": "unsigned",
+  "name": "REDACTED FOR PRIVACY",
+  "org": "Private by Design, LLC",
+  "address": "REDACTED FOR PRIVACY",
+  "city": "REDACTED FOR PRIVACY",
+  "state": "NC",
+  "registrant_postal_code": "REDACTED FOR PRIVACY",
+  "country": "US"
+}{
+  "domain_name": "upmirror.top",
+  "registrar": "NameSilo,LLC",
+  "whois_server": "whois.namesilo.com",
+  "referral_url": null,
+  "updated_date": "2022-09-14 16:47:30",
+  "creation_date": "2022-06-29 22:01:18",
+  "expiration_date": "2023-06-29 22:01:18",
+  "name_servers": [
+    "ns1.upmirror.top",
+    "ns2.upmirror.top"
+  ],
+  "status": [
+    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+    "clientHold https://icann.org/epp#clientHold"
+  ],
+  "emails": "abuse@namesilo.com",
+  "dnssec": "unsigned",
+  "name": "REDACTED FOR PRIVACY",
+  "org": "See PrivacyGuardian.org",
+  "address": "REDACTED FOR PRIVACY",
+  "city": "REDACTED FOR PRIVACY",
+  "state": "AZ",
+  "registrant_postal_code": "REDACTED FOR PRIVACY",
+  "country": "US"
+}

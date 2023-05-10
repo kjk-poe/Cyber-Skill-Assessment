@@ -2,6 +2,8 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
+import whois
+import json
 
 def main():
     url = "https://www.secureworks.com/blog/opsec-mistakes-reveal-cobalt-mirage-threat-actors"
@@ -39,9 +41,21 @@ def main():
         url_line = i.find_previous("td")
         domain_name.append(getSubstringBetweenTwoChars(">","<",str(url_line)))
     
-    print(f'ip address is{ip_address}')
-    print(f'hash code is {hash_code}')
-    print(f'Domain name is {domain_name}')
+    # print(f'ip address is{ip_address}')
+    # print(f'hash code is {hash_code}')
+    # print(f'Domain name is {domain_name}')
+
+    #generate whois information
+    for i in range(len(domain_name)):
+        w = str(whois.whois(domain_name[i]))
+        #print(w)
+        pd.json_normalize(w)
+        df = pd.read_json(w)
+        print(len(df))
+        #df.to_csv(f"whois_information{i}.csv")
+        # with open('my_file.csv', 'a') as out:
+        #     out.write(w)
+
 
 def getSubstringBetweenTwoChars(ch1,ch2,s):
     return s[s.find(ch1)+1:s.find(ch2,len(s)-10, len(s))]
