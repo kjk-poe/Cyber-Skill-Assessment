@@ -15,7 +15,6 @@ def main():
     match = re.findall(r"[0-9]{1,3} \. [0-9]{1,3} \. [0-9]{1,3} \. [0-9]{1,3}",string)
     match_2 = re.findall(r"[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}", string)
     ip_address = match + match_2
-    #print(ip_address)
     
     #extract hash
     line = soup.find_all("td", string=["SHA256 hash","SHA1 hash","MD5 hash"])
@@ -23,22 +22,26 @@ def main():
     for i in line:
         hash_line = i.find_previous("td")
         hash_code.append(getSubstringBetweenTwoChars(">","<",str(hash_line)))
-        #print(getSubstringBetweenTwoChars(">","<",str(hash_line)))
     
     for i in range(len(hash_code)):
         if i == 0:
+            #could be optimised
             first_part = hash_code[i][0:40]
             second_part = hash_code[i][len(hash_code[i])-23:len(hash_code[i])]
             hash_code[i] = first_part+second_part
         hash_code[i] = hash_code[i].replace('<br/>','')
         hash_code[i] = hash_code[i].replace(r'\n','')
+
+    #extract domain/url
+    domain_name=[]
+    domain_name_line = soup.find_all("td", string=["Domain name"])
+    for i in domain_name_line:
+        url_line = i.find_previous("td")
+        domain_name.append(getSubstringBetweenTwoChars(">","<",str(url_line)))
     
-    #print(hash_code)
-
-    #extract domain
-    
-
-
+    print(f'ip address is{ip_address}')
+    print(f'hash code is {hash_code}')
+    print(f'Domain name is {domain_name}')
 
 def getSubstringBetweenTwoChars(ch1,ch2,s):
     return s[s.find(ch1)+1:s.find(ch2,len(s)-10, len(s))]
