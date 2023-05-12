@@ -4,6 +4,7 @@ import pandas as pd
 import re
 import whois
 import json
+import csv
 
 def main():
     url = "https://www.secureworks.com/blog/opsec-mistakes-reveal-cobalt-mirage-threat-actors"
@@ -46,16 +47,27 @@ def main():
     # print(f'Domain name is {domain_name}')
 
     #generate whois information
+    jsonfile=[]
     for i in range(len(domain_name)):
-        w = str(whois.whois(domain_name[i]))
-        #print(w)
-        pd.json_normalize(w)
-        df = pd.read_json(w)
-        print(len(df))
-        #df.to_csv(f"whois_information{i}.csv")
-        # with open('my_file.csv', 'a') as out:
-        #     out.write(w)
+        w = (whois.whois(domain_name[i]))
+        jsonfile.append(w)
 
+    fieldnames = ['domain_name', 'registrar', 'whois_server', 'referral_url',
+              'updated_date', 'creation_date', 'expiration_date', 'name_servers',
+              'status', 'emails', 'dnssec', 'name', 'org', 'address', 'city',
+              'state', 'registrant_postal_code', 'country']
+    
+    #I only output the last 3 whois infomation into a output.csv as the first whois information has different columns
+    with open('output.csv',"w") as file:
+        csv_file =csv.writer(file)
+        csv_file.writerow(fieldnames)
+        for i in range(1, len(jsonfile)):
+            data= jsonfile[i]
+            csv_file.writerow([data['domain_name'], data['registrar'], data['whois_server'],data['referral_url'],
+                               data['updated_date'],data['creation_date'],data['expiration_date'],data['name_servers'],
+                               data['status'],data['emails'],data['dnssec'],data['name'],
+                               data['org'],data['address'],data['city'],data['state'],data['registrant_postal_code'],
+                               data['country']])
 
 def getSubstringBetweenTwoChars(ch1,ch2,s):
     return s[s.find(ch1)+1:s.find(ch2,len(s)-10, len(s))]
